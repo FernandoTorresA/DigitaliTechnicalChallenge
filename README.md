@@ -17,7 +17,7 @@ Se exponen 8 endpoints en total:
 
 POST -> http://localhost:8080/digitali/colaboradores
 Request body de ejemplo (Json):
-
+```
 {
     "rut": "177998893",
     "primerNombre": "Fernando",
@@ -27,7 +27,7 @@ Request body de ejemplo (Json):
     "fechaNacimiento": "1991-05-13",
     "direccion": "Los Clarines 3139"
 }
-
+```
 2- Obtener Colaborador por RUT (con RequestParam)
 ---------------------------------------------------------------------------
 
@@ -71,12 +71,12 @@ BASE DE DATOS
 ---------------------------------------------------------------------------
 
 Se utilizó una base de datos PostgreSQL con asistente pgAdmin. Se creó un servidor "Digitali" con base de datos "postgres" y un nuevo esquema para el ejercicio:
-
+```
 CREATE SCHEMA IF NOT EXISTS digitali
     AUTHORIZATION postgres;
-
+```
 Posteriormente, la tabla se creó con la siguiente query:
-
+```
 CREATE TABLE IF NOT EXISTS digitali.colaborador
 (
     id SERIAL PRIMARY KEY,
@@ -88,14 +88,14 @@ CREATE TABLE IF NOT EXISTS digitali.colaborador
     fecha_nacimiento date NOT NULL,
     direccion text COLLATE pg_catalog."default" NOT NULL
 );
-
+```
 Las credenciales definidas para la base de datos definidas en el componente son:
-
+```
 spring.datasource.url=jdbc:postgresql://localhost:5432/postgres?useUnicode=true& \
 characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
 spring.datasource.username=postgres
 spring.datasource.password=qwer
-
+```
 Una instalación básica y por defecto de postgresql debería respetar los parámetros descritos arriba (puerto, jdbc, etc) solo fijarse de dar la password correcta
 
 PARA EJECUTAR JAR
