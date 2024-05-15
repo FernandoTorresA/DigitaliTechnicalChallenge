@@ -1,4 +1,4 @@
-El proyecto fue creado con Springboot mediante el asistente de Intellij IDEA (initializer).
+El proyecto fue creado con Java 17 y Springboot mediante el asistente de Intellij IDEA (initializer).
 El manejo de dependencias se gestiona mediante gradle, importando de antemano dependencias básicas para la creación del proyecto (en el asistente)
 Las dependencias posteriores están comentadas en el archivo build.gradle
 
