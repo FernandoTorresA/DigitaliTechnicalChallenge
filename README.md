@@ -105,4 +105,3 @@ En la carpeta src/main/resources está el archivo "DigitaliTechnicalChallenge.ja
 #ir a la ruta del jar o copiarlo donde se desee...
 
 java - jar DigitaliTechnicalChallenge.jar
--
