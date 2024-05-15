@@ -38,10 +38,11 @@ GET -> http://localhost:8080/digitali/colaboradores?rut=177998893
 
 UPDATE -> http://localhost:8080/digitali/colaboradores/177998893
 Request body de ejemplo (Json):
+```
 {
     "direccion": "Los Clarines 3139"
 }
-
+```
 4- Eliminar colaborador (con PathVariable)
 ---------------------------------------------------------------------------
 
