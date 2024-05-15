@@ -97,7 +97,7 @@ characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&us
 spring.datasource.username=postgres
 spring.datasource.password=qwer
 ```
-Una instalación básica y por defecto de postgresql debería respetar los parámetros descritos arriba (puerto, jdbc, etc) solo fijarse de dar la password correcta
+Una instalación básica y por defecto de postgresql debería respetar los parámetros descritos arriba (puerto, jdbc, etc) solo fijarse de dar el **username y password correcta**
 
 PARA EJECUTAR JAR
 --------------------------------------------------------------------------
