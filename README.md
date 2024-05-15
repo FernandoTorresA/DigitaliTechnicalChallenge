@@ -89,6 +89,10 @@ CREATE TABLE IF NOT EXISTS digitali.colaborador
     direccion text COLLATE pg_catalog."default" NOT NULL
 );
 
+PARA EJECUTAR JAR
+--------------------------------------------------------------------------
+
+
 
 
 La conexión a la base de datos está definida en el application.properties del aplicativo.
