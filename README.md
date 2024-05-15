@@ -103,4 +103,5 @@ PARA EJECUTAR JAR
 En la carpeta src/main/resources está el archivo "DigitaliTechnicalChallenge.jar" Este puede ser ejecutado en cualquier máquina con el siguiente comando  CMD (windows):
 
 #ir a la ruta del jar o copiarlo donde se desee...
+
 java - jar DigitaliTechnicalChallenge.jar
