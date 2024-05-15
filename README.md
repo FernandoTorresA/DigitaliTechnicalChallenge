@@ -89,10 +89,18 @@ CREATE TABLE IF NOT EXISTS digitali.colaborador
     direccion text COLLATE pg_catalog."default" NOT NULL
 );
 
+Las credenciales definidas para la base de datos definidas en el componente son:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres?useUnicode=true& \
+characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=UTC
+spring.datasource.username=postgres
+spring.datasource.password=qwer
+
+Una instalación básica y por defecto de postgresql debería respetar los parámetros descritos arriba (puerto, jdbc, etc) solo fijarse de dar la password correcta
+
 PARA EJECUTAR JAR
 --------------------------------------------------------------------------
+En la carpeta src/main/resources está el archivo "DigitaliTechnicalChallenge.jar" Este puede ser ejecutado en cualquier máquina con el siguiente comando  CMD (windows):
 
-
-
-
-La conexión a la base de datos está definida en el application.properties del aplicativo.
+#ir a la ruta del jar o copiarlo donde se desee...
+java - jar DigitaliTechnicalChallenge.jar
