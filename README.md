@@ -7,11 +7,11 @@ El código está hecho en base a alineamientos de buenas prácticas definido por
 El proyecto por defecto utiliza servidor tomcat (springboot) y levanta el puerto 8080 de la máquina local. A partir de allí, se expone el requestMapping para el proyecto REST y para los preblemas matemáticos:
 
 http://localhost:8080/digitali/colaboradores
+
 http://localhost:8080/digitali/problemas
 
 Se exponen 8 endpoints en total:
 
----------------------------------------------------------------------------
 1- Ingresar Colaborador (con RequestBody)----------------------------------
 ---------------------------------------------------------------------------
 
@@ -28,13 +28,11 @@ Request body de ejemplo (Json):
     "direccion": "Los Clarines 3139"
 }
 
----------------------------------------------------------------------------
 2- Obtener Colaborador por RUT (con RequestParam) -------------------------
 ---------------------------------------------------------------------------
 
 GET -> http://localhost:8080/digitali/colaboradores?rut=177998893
 
----------------------------------------------------------------------------
 3- Actualizar dirección de colaborador (con PathVariable y Body) ----------
 ---------------------------------------------------------------------------
 
@@ -44,37 +42,31 @@ Request body de ejemplo (Json):
     "direccion": "Los Clarines 3139"
 }
 
----------------------------------------------------------------------------
 4- Eliminar colaborador (con PathVariable) --------------------------------
 ---------------------------------------------------------------------------
 
 DELETE -> http://localhost:8080/digitali/colaboradores/177998893
 
----------------------------------------------------------------------------
 5- Obtener solo fecha de nacimiento de colaborador (con RequestParam) -----
 ---------------------------------------------------------------------------
 
 GET -> http://localhost:8080/digitali/colaboradores/getFechaNacimiento?rut=177998893
 
----------------------------------------------------------------------------
 6- Obtener todo (no se pidió, pero es útil) -------------------------------
 ---------------------------------------------------------------------------
 
 GET -> http://localhost:8080/digitali/colaboradores/getAll
 
----------------------------------------------------------------------------
 7- Problema matemático 1, múltiples de 3 o 5 (con RequestParam) -----------
 ---------------------------------------------------------------------------
 
 GET -> http://localhost:8080/digitali/problemas/getMultiplos?value=1000
 
----------------------------------------------------------------------------
 8- Problema matemático 2, mayor factor primo (con RequestParam) -----------
 ---------------------------------------------------------------------------
 
 GET -> http://localhost:8080/digitali/problemas/getFactorPrimo?value=13195
 
----------------------------------------------------------------------------
 BASE DE DATOS -------------------------------------------------------------
 ---------------------------------------------------------------------------
 
