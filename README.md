@@ -101,7 +101,7 @@ Una instalación básica y por defecto de postgresql debería respetar los pará
 
 PARA EJECUTAR JAR
 --------------------------------------------------------------------------
-En la carpeta src/main/resources está el archivo "DigitaliTechnicalChallenge.jar" Este puede ser ejecutado en cualquier máquina con el siguiente comando  CMD (windows):
+En la carpeta src/main/resources está el archivo "DigitaliTechnicalChallenge.jar" Este puede ser ejecutado en cualquier máquina que tenga Java JDK o JRE instalado con el siguiente comando (CMD en windows):
 
 #ir a la ruta del jar o copiarlo donde se desee...
 
